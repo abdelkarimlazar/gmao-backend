@@ -1,0 +1,6 @@
+@GmaoIntentApi_HostAddress = http://localhost:5268
+
+GET {{GmaoIntentApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

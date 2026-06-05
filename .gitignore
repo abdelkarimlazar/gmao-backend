@@ -1,0 +1,20 @@
+# Secrets locaux
+appsettings.Development.json
+
+# MySQL local
+.mysql/
+mysql-local.ini
+GmaoIntentApi/mysql-local.ini
+
+# Logs
+*.log
+
+# Fichiers compilés
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# Outils locaux
+.tools/
