@@ -1,136 +1,103 @@
-# \# GMAO Backend
+# Smart Maintenance Management System (GMAO)
 
-# 
+## Overview
 
-# ASP.NET Core 8 REST API for a Smart Maintenance Management System (GMAO).
+Smart Maintenance Management System (GMAO) is a web application developed to manage industrial equipment maintenance operations efficiently.
 
-# 
+The application allows users to:
 
-# \## Technologies
+* Manage equipment
+* Track breakdowns and incidents
+* Plan maintenance tasks
+* Monitor interventions
+* Manage users and roles
+* Receive notifications
+* Interact with an intelligent intent-based assistant
 
-# 
+---
 
-# \* ASP.NET Core 8
+## Technologies
 
-# \* Entity Framework Core
+### Backend
 
-# \* MySQL
+* ASP.NET Core 8
+* Entity Framework Core
+* MySQL
+* JWT Authentication
+* Swagger / OpenAPI
 
-# \* JWT Authentication
+### Architecture
 
-# \* Swagger / OpenAPI
+* Repository Pattern
+* Service Layer
+* REST API
+* Dependency Injection
 
-# \* Repository Pattern
+---
 
-# \* Service Layer
+## Main Features
 
-# 
+* Authentication and authorization
+* User management
+* Equipment management
+* Breakdown management
+* Preventive maintenance
+* Corrective maintenance
+* Dashboard and statistics
+* Notification system
+* Intelligent intent assistant
 
-# \## Features
+---
 
-# 
+## Project Structure
 
-# \* Authentication and authorization
+```text
+Controllers/
+DTOs/
+Models/
+Services/
+Repositories/
+Data/
+Enums/
+Options/
+Migrations/
+Program.cs
+```
 
-# \* User management
+---
 
-# \* Equipment management
+## Configuration
 
-# \* Breakdown management
+Before running the project, update `appsettings.json`:
 
-# \* Maintenance task management
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "server=localhost;port=3306;database=gmao_intent_db;user=YOUR_USER;password=YOUR_PASSWORD"
+  },
+  "Jwt": {
+    "Key": "YOUR_SECRET_KEY"
+  }
+}
+```
 
-# \* Notifications
+---
 
-# \* Dashboard statistics
+## Run Project
 
-# \* Intent-based assistant
+```bash
+dotnet restore
+dotnet run
+```
 
-# 
+---
 
-# \## Project Structure
+## Author
 
-# 
+Abdelkarim Lazar
 
-# ```text
+GitHub:
+https://github.com/abdelkarimlazar
 
-# Controllers/
-
-# DTOs/
-
-# Models/
-
-# Services/
-
-# Repositories/
-
-# Data/
-
-# Enums/
-
-# Options/
-
-# Migrations/
-
-# Program.cs
-
-# ```
-
-# 
-
-# \## Configuration
-
-# 
-
-# Before running the project, update `appsettings.json`:
-
-# 
-
-# ```json
-
-# {
-
-# &#x20; "ConnectionStrings": {
-
-# &#x20;   "DefaultConnection": "server=localhost;port=3306;database=gmao\_intent\_db;user=YOUR\_USER;password=YOUR\_PASSWORD"
-
-# &#x20; },
-
-# &#x20; "Jwt": {
-
-# &#x20;   "Key": "YOUR\_SECRET\_KEY"
-
-# &#x20; }
-
-# }
-
-# ```
-
-# 
-
-# \## Run Project
-
-# 
-
-# ```bash
-
-# dotnet restore
-
-# dotnet run
-
-# ```
-
-# 
-
-# \## Author
-
-# 
-
-# Abdelkarim Lazar
-
-# GitHub: https://github.com/abdelkarimlazar
-
-# LinkedIn: https://www.linkedin.com/in/abdelkarim-lazar-8597173b5/
-
-# 
-
+LinkedIn:
+https://www.linkedin.com/in/abdelkarim-lazar-8597173b5/
